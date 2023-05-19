@@ -4,7 +4,7 @@ const app = express()
 const mailchimp = require("@mailchimp/mailchimp_marketing");
 
 mailchimp.setConfig({
-  apiKey: "e7897a2e7ab959f3c3e672fa85797352-us17",
+  apiKey: process.env.API_KEY,
   server: "us17",
 });
 
